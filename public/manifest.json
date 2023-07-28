@@ -1,0 +1,22 @@
+{
+    "name": "Copy Odds",
+    "description": "Copy Odds from Bookmakers",
+    "version": "1.0",
+    "manifest_version": 3,
+    "permissions": [],
+    "content_scripts": [
+      {
+        "js": ["content_script.js"],
+        "matches": [
+          "https://www.pinnacle.com/en/*",
+          "https://www.pinnacle.ca/en/*"
+        ],
+        "run_at": "document_end"
+      }
+    ],
+    "icons": {
+      "16": "icon-16x16.png",
+      "32": "icon-32x32.png",
+      "128": "icon-128x128.png"
+    }
+ }
