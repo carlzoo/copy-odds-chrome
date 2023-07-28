@@ -1,8 +1,10 @@
-const ROOT_SELECTORS = [
+/*const ROOT_SELECTORS = [
     '.matchup-market-groups',
-    '.contentBlock'
-];
-const WAIT_ELEMENT = 'div[class*="style_content"] > div[class*="style_button"]';
+    'main[class*="style_desktop_middle"]',
+    'div[class*="style_specials"]'
+];*/
+const WAIT_ELEMENT = 'div[class*="style_buttons"] >* button > span';
+const MUTATION_OBSERVER_ELEMENT = 'div[';
 
 // @input: <div class="style_buttonRow__*">
 
@@ -11,36 +13,34 @@ const waitForPinnacleEl = (selector: string, callback: () => void) => {
       callback();
     } else {
       setTimeout(() => {
-        waitForPinnacleEl(selector, callback);
-      }, 100);
+            waitForPinnacleEl(selector, callback);
+        }, 100);
     }
-  };
+};
 
 const makeOddsTextSelectable = (): void => {
 
-    ROOT_SELECTORS.forEach((selector) => {
-        const root = document.querySelector(selector);
-        const buttons = root?.querySelectorAll('button');
-        buttons?.forEach((button) => {
-            button.style.userSelect = "text";
-        });
+    const buttons = document.querySelectorAll('button');
+    buttons?.forEach((button) => {
+        button.style.userSelect = "text";
     });
 }
 
-waitForPinnacleEl(WAIT_ELEMENT, () => {
-    makeOddsTextSelectable();
-    //TODO: add listeners for odds changes on html elements, and then rerun getPinnacleOdds
-    //const target = document.getElementsByTagName('body')[0];
-    //const observer = new MutationObserver(function(mutations) {
-    //mutations.forEach(function(mutation) {
-        /*if(mutation.addedNodes.length > 0 && mutation.addedNodes[0].firstChild.nodeValue == "Not enough?") {
-        mutation.addedNodes[0].addEventListener("click", createImage);
-        }*/
-    //    console.log("mutation detected");
-    //});    
-    //});
+const runPinnacle = () => {
+    waitForPinnacleEl(WAIT_ELEMENT, () => {
+        makeOddsTextSelectable();
+    });
+}
 
-    //const config = { attributes: true, childList: true, characterData: true };
-    //observer.observe(target, config);
-});
+runPinnacle();
 
+const targetNode = document.querySelector('div#root');
+const config = { attributes: true, childList: true, subtree: true };
+const observer = new MutationObserver((mutationList, _observer) => {
+    if (mutationList.length > 0) {
+        runPinnacle();
+    }
+  });
+if (targetNode) {
+    observer.observe(targetNode, config);
+}
