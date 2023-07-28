@@ -1,12 +1,6 @@
-/*const ROOT_SELECTORS = [
-    '.matchup-market-groups',
-    'main[class*="style_desktop_middle"]',
-    'div[class*="style_specials"]'
-];*/
 const WAIT_ELEMENT = 'div[class*="style_buttons"] >* button > span';
-const MUTATION_OBSERVER_ELEMENT = 'div[';
-
-// @input: <div class="style_buttonRow__*">
+const MUTATION_OBSERVER_ELEMENT = 'div#root';
+const MAKE_SELECTABLE_ELEMENT = 'button';
 
 const waitForPinnacleEl = (selector: string, callback: () => void) => {
     if (document.querySelectorAll(selector).length) {
@@ -20,7 +14,7 @@ const waitForPinnacleEl = (selector: string, callback: () => void) => {
 
 const makeOddsTextSelectable = (): void => {
 
-    const buttons = document.querySelectorAll('button');
+    const buttons = document.querySelectorAll(MAKE_SELECTABLE_ELEMENT);
     buttons?.forEach((button) => {
         button.style.userSelect = "text";
     });
@@ -34,7 +28,7 @@ const runPinnacle = () => {
 
 runPinnacle();
 
-const targetNode = document.querySelector('div#root');
+const targetNode = document.querySelector(MUTATION_OBSERVER_ELEMENT);
 const config = { attributes: true, childList: true, subtree: true };
 const observer = new MutationObserver((mutationList, _observer) => {
     if (mutationList.length > 0) {
