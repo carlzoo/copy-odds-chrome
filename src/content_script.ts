@@ -1,38 +1,42 @@
-const WAIT_ELEMENT = 'div[class*="style_buttons"] >* button > span';
-const MUTATION_OBSERVER_ELEMENT = 'div#root';
-const MAKE_SELECTABLE_ELEMENT = 'button';
+import { ISiteConfig, PINNACLE_CONFIG } from "./config";
 
-const waitForPinnacleEl = (selector: string, callback: () => void) => {
-    if (document.querySelectorAll(selector).length) {
-      callback();
-    } else {
-      setTimeout(() => {
-            waitForPinnacleEl(selector, callback);
-        }, 100);
+const hostConfigDict : Record<string, ISiteConfig> = {
+    'www.pinnacle.com': PINNACLE_CONFIG,
+    'www.pinnacle.ca': PINNACLE_CONFIG,
+ }
+
+const run = (config: ISiteConfig) => {
+    const waitForLoaded = (selector: string, callback: () => void) => {
+        if (document.querySelectorAll(selector).length) {
+          callback();
+        } else {
+          setTimeout(() => {
+                waitForLoaded(selector, callback);
+            }, 100);
+        }
+    };
+    
+    const makeOddsTextSelectable = (): void => {
+    
+        const buttons = document.querySelectorAll<HTMLElement>(config.makeSelectable);
+        buttons?.forEach((button) => {
+            button.style.userSelect = "text";
+        });
     }
-};
-
-const makeOddsTextSelectable = (): void => {
-
-    const buttons = document.querySelectorAll(MAKE_SELECTABLE_ELEMENT);
-    buttons?.forEach((button) => {
-        button.style.userSelect = "text";
-    });
-}
-
-const runPinnacle = () => {
-    waitForPinnacleEl(WAIT_ELEMENT, () => {
+    
+    waitForLoaded(config.wait, () => {
         makeOddsTextSelectable();
     });
 }
 
-runPinnacle();
+const hostConfig = hostConfigDict[location.host];
+run(hostConfig);
 
-const targetNode = document.querySelector(MUTATION_OBSERVER_ELEMENT);
+const targetNode = document.querySelector(hostConfig.mutationObserver);
 const config = { attributes: true, childList: true, subtree: true };
 const observer = new MutationObserver((mutationList, _observer) => {
     if (mutationList.length > 0) {
-        runPinnacle();
+        run(hostConfig);
     }
   });
 if (targetNode) {
