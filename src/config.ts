@@ -28,6 +28,18 @@ export const CAESARS_CONFIG: ISiteConfig = {
     makeSelectable: 'button'
 }
 
+export const BET365_CONFIG: ISiteConfig = {
+    wait: 'div.gl-Participant_General > span',
+    mutationObserver: 'div.wc-PageView',
+    makeSelectable: 'div[role=button]'
+}
+
+export const BORGATA_CONFIG: ISiteConfig = {
+    wait: 'div#main-view >* div.option-indicator',
+    mutationObserver: 'div#main-view',
+    makeSelectable: 'div.option-indicator'
+}
+
 export const HOST_CONFIG_MAP : Record<string, ISiteConfig> = {
     'www.pinnacle.com': PINNACLE_CONFIG,
     'www.pinnacle.ca': PINNACLE_CONFIG,
@@ -54,5 +66,21 @@ export const HOST_CONFIG_MAP : Record<string, ISiteConfig> = {
     'sports.wv.betmgm.com': BETMGM_CONFIG,
     'sports.wy.betmgm.com': BETMGM_CONFIG,
     'sports.on.betmgm.ca': BETMGM_CONFIG,
-    'sportsbook.caesars.com': CAESARS_CONFIG
+    'sportsbook.caesars.com': CAESARS_CONFIG,
+    'www.nj.bet365.com': BET365_CONFIG,
+    'www.co.bet365.com': BET365_CONFIG,
+    'www.ia.bet365.com': BET365_CONFIG,
+    'www.va.bet365.com': BET365_CONFIG,
+    'www.bet365.com': BET365_CONFIG,
+    'www.on.bet365.ca': BET365_CONFIG,
+    'www.bet365.com.au': BET365_CONFIG,
+    'www.bet365.nl': BET365_CONFIG,
+    'www.bet365.ee': BET365_CONFIG,
+    'www.bet365.it': BET365_CONFIG,
+    'www.bet365.es': BET365_CONFIG,
+    'www.bet365.gr': BET365_CONFIG,
+    'www.bet365.de': BET365_CONFIG,
+    'www.bet365.com.cy': BET365_CONFIG,
+    'www.bet365.mx': BET365_CONFIG,
+    'sports.borgataonline.com': BORGATA_CONFIG
  }

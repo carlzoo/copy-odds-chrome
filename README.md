@@ -7,10 +7,10 @@ Supported books:
 - Draftkings
 - Caesars
 - BetMGM: all states
-
-Support coming soon:
 - Bet365
 - Borgata
+
+Support coming soon:
 - PartyPoker
 - BetRivers
 - Pointsbet

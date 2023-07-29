@@ -27,20 +27,24 @@ const run = (config: ISiteConfig) => {
 }
 
 const hostConfig = HOST_CONFIG_MAP[location.host];
-run(hostConfig);
-
-waitForLoaded(hostConfig.wait, () => {
-    const targetNode = document.querySelector(hostConfig.mutationObserver);
-    const mutationObserverConfig = { attributes: true, childList: true, subtree: true, characterData: true };
-    const observer = new MutationObserver((mutationList, _observer) => {
-        if (mutationList.length > 0) {
-            run(hostConfig);
+if (hostConfig) {
+    console.log("[Copy odds] Copy odds extension running");
+    run(hostConfig);
+    waitForLoaded(hostConfig.wait, () => {
+        const targetNode = document.querySelector(hostConfig.mutationObserver);
+        const mutationObserverConfig = { attributes: true, childList: true, subtree: true, characterData: true };
+        const observer = new MutationObserver((mutationList, _observer) => {
+            if (mutationList.length > 0) {
+                run(hostConfig);
+            }
+        });
+        if (targetNode) {
+            observer.observe(targetNode, mutationObserverConfig);
+        } else {
+            console.log("[Copy odds] Unable to find observer node!");
         }
     });
-    if (targetNode) {
-        observer.observe(targetNode, mutationObserverConfig);
-    } else {
-        console.log("Unable to find observer node!");
-    }
-});
+}
+
+
 
