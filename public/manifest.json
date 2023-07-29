@@ -32,7 +32,8 @@
           "https://sports.dc.betmgm.com/*",
           "https://sports.wv.betmgm.com/*",
           "https://sports.wy.betmgm.com/*",
-          "https://sports.on.betmgm.ca/*"
+          "https://sports.on.betmgm.ca/*",
+          "https://sportsbook.caesars.com/*"
         ],
         "run_at": "document_end"
       }

@@ -22,6 +22,12 @@ export const BETMGM_CONFIG: ISiteConfig = {
     makeSelectable: 'div.option-indicator'
 }
 
+export const CAESARS_CONFIG: ISiteConfig = {
+    wait: 'div.selectionContainer >* button > div > span',
+    mutationObserver: 'div.contentContainer',
+    makeSelectable: 'button'
+}
+
 export const HOST_CONFIG_MAP : Record<string, ISiteConfig> = {
     'www.pinnacle.com': PINNACLE_CONFIG,
     'www.pinnacle.ca': PINNACLE_CONFIG,
@@ -47,5 +53,6 @@ export const HOST_CONFIG_MAP : Record<string, ISiteConfig> = {
     'sports.dc.betmgm.com': BETMGM_CONFIG,
     'sports.wv.betmgm.com': BETMGM_CONFIG,
     'sports.wy.betmgm.com': BETMGM_CONFIG,
-    'sports.on.betmgm.ca': BETMGM_CONFIG
+    'sports.on.betmgm.ca': BETMGM_CONFIG,
+    'sportsbook.caesars.com': CAESARS_CONFIG
  }
