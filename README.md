@@ -12,10 +12,10 @@ Supported books:
 - PartyPoker
 - bwin
 - Sportingbet
-
-Support coming soon:
 - BetRivers
 - Sugarhouse
+
+Support coming soon:
 - Pointsbet
 - Northstar Bets
 - betParx
