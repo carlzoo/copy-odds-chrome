@@ -1,8 +1,9 @@
-import { ISiteConfig, PINNACLE_CONFIG } from "./config";
+import { DRAFTKINGS_CONFIG, ISiteConfig, PINNACLE_CONFIG } from "./config";
 
 const hostConfigDict : Record<string, ISiteConfig> = {
     'www.pinnacle.com': PINNACLE_CONFIG,
     'www.pinnacle.ca': PINNACLE_CONFIG,
+    'sportsbook.draftkings.com': DRAFTKINGS_CONFIG
  }
 
 const run = (config: ISiteConfig) => {
