@@ -14,9 +14,9 @@ Supported books:
 - Sportingbet
 - BetRivers
 - Sugarhouse
+- Unibet
 
 Support coming soon:
-- Unibet
 - betParx
 - LeoVegas
 - Pointsbet
