@@ -15,10 +15,11 @@ Supported books:
 - BetRivers
 - Sugarhouse
 - Unibet
+- betPARX
+- Play Gun Lake
+- LeoVegas
 
 Support coming soon:
-- betParx
-- LeoVegas
 - Pointsbet
 - Northstar Bets
 - Betano
