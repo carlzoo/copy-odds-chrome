@@ -39,6 +39,8 @@ waitForLoaded(hostConfig.wait, () => {
     });
     if (targetNode) {
         observer.observe(targetNode, mutationObserverConfig);
+    } else {
+        console.log("Unable to find observer node!");
     }
 });
 

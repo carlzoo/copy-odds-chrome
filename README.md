@@ -6,8 +6,6 @@ Supported books:
 - Pinnacle: pinnacle.com, pinnacle.ca
 - Draftkings
 - Caesars
-
-Work In progress:
 - BetMGM: all states
 
 Support coming soon:
