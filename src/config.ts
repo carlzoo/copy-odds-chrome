@@ -40,6 +40,12 @@ export const BETRIVERS_CONFIG: ISiteConfig = {
     makeSelectable: 'button'
 }
 
+export const UNIBET_CONFIG: ISiteConfig = {
+    wait: 'button.KambiBC-betty-outcome > div',
+    mutationObserver: 'div#rightPanel',
+    makeSelectable: 'button'
+}
+
 export const HOST_CONFIG_MAP : Record<string, ISiteConfig> = {
     'www.pinnacle.com': PINNACLE_CONFIG,
     'www.pinnacle.ca': PINNACLE_CONFIG,
@@ -103,4 +109,5 @@ export const HOST_CONFIG_MAP : Record<string, ISiteConfig> = {
     'wv.betrivers.com': BETRIVERS_CONFIG,
     'on.betrivers.ca': BETRIVERS_CONFIG,
     'ct.playsugarhouse.com': BETRIVERS_CONFIG,
+    'www.unibet.com': UNIBET_CONFIG
  }

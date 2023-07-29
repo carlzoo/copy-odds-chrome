@@ -16,21 +16,25 @@ Supported books:
 - Sugarhouse
 
 Support coming soon:
+- Unibet
+- betParx
+- LeoVegas
 - Pointsbet
 - Northstar Bets
-- betParx
 - Betano
-- Unibet
 - Tipico
 - Action247
 - Paddypower
 - William Hill
 - Predictit
+- Neobet
+- PS3838
 
 - Coral
-- Tonybet
 - Bookmaker
 - BetCris
+- Betfred
+- Skybet
 
 Deprioritized support (already has text selection):
 - Fanduel
@@ -52,3 +56,7 @@ Deprioritized support (already has text selection):
 - Ladbrokes
 - Prophet Exchange
 - Betus
+- Tonybet
+- Proline
+- Dafabet
+- Sbobet
