@@ -1,10 +1,4 @@
-import { DRAFTKINGS_CONFIG, ISiteConfig, PINNACLE_CONFIG } from "./config";
-
-const hostConfigDict : Record<string, ISiteConfig> = {
-    'www.pinnacle.com': PINNACLE_CONFIG,
-    'www.pinnacle.ca': PINNACLE_CONFIG,
-    'sportsbook.draftkings.com': DRAFTKINGS_CONFIG
- }
+import { HOST_CONFIG_MAP, ISiteConfig } from "./config";
 
 const run = (config: ISiteConfig) => {
     const waitForLoaded = (selector: string, callback: () => void) => {
@@ -30,7 +24,7 @@ const run = (config: ISiteConfig) => {
     });
 }
 
-const hostConfig = hostConfigDict[location.host];
+const hostConfig = HOST_CONFIG_MAP[location.host];
 run(hostConfig);
 
 const targetNode = document.querySelector(hostConfig.mutationObserver);

@@ -10,7 +10,29 @@
         "matches": [
           "https://www.pinnacle.com/en/*",
           "https://www.pinnacle.ca/en/*",
-          "https://sportsbook.draftkings.com/*"
+          "https://sportsbook.draftkings.com/*",
+          "https://sports.az.betmgm.com/*",
+          "https://sports.co.betmgm.com/*",
+          "https://sports.il.betmgm.com/*",
+          "https://sports.in.betmgm.com/*",
+          "https://sports.ia.betmgm.com/*",
+          "https://sports.ks.betmgm.com/*",
+          "https://sports.la.betmgm.com/*",
+          "https://sports.md.betmgm.com/*",
+          "https://sports.ma.betmgm.com/*",
+          "https://sports.mi.betmgm.com/*",
+          "https://sports.ms.betmgm.com/*",
+          "https://sports.nj.betmgm.com/*",
+          "https://sports.ny.betmgm.com/*",
+          "https://sports.oh.betmgm.com/*",
+          "https://sports.pa.betmgm.com/*",
+          "https://sports.pr.betmgm.com/*",
+          "https://sports.tn.betmgm.com/*",
+          "https://sports.va.betmgm.com/*",
+          "https://sports.dc.betmgm.com/*",
+          "https://sports.wv.betmgm.com/*",
+          "https://sports.wy.betmgm.com/*",
+          "https://sports.on.betmgm.ca/*"
         ],
         "run_at": "document_end"
       }
