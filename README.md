@@ -19,23 +19,24 @@ Supported books:
 - Play Gun Lake
 - LeoVegas
 - Pointsbet
+- Northstar Bets
 
 Support coming soon:
-- Northstar Bets
 - Betano
-- Tipico
 - Action247
 - Paddypower
 - William Hill
 - Predictit
+- Betfair
+- Netbet
 - Neobet
+- Betclic
+- Cloudbet
 - PS3838
 
 - Coral
 - Bookmaker
 - BetCris
-- Betfred
-- Skybet
 
 Deprioritized support (already has text selection):
 - Fanduel
@@ -63,3 +64,9 @@ Deprioritized support (already has text selection):
 - Sbobet
 - Stake
 - gg.bet
+- Skybet
+- Betfred
+- Tipico
+- BetVictor
+- BetOpenly
+- SportingIndex
