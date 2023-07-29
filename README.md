@@ -9,9 +9,11 @@ Supported books:
 - BetMGM: all states
 - Bet365
 - Borgata
+- PartyPoker
+- bwin
+- Sportingbet
 
 Support coming soon:
-- PartyPoker
 - BetRivers
 - Pointsbet
 - Northstar Bets
@@ -20,6 +22,8 @@ Support coming soon:
 - Unibet
 - Tipico
 - Action247
+- Paddypower
+- William Hill
 
 Deprioritized support (already has text selection):
 - Fanduel
@@ -38,3 +42,4 @@ Deprioritized support (already has text selection):
 - Foxbet
 - Mybookie
 - 888sport
+- Ladbrokes

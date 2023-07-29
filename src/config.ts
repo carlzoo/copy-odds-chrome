@@ -34,12 +34,6 @@ export const BET365_CONFIG: ISiteConfig = {
     makeSelectable: 'div[role=button]'
 }
 
-export const BORGATA_CONFIG: ISiteConfig = {
-    wait: 'div#main-view >* div.option-indicator',
-    mutationObserver: 'div#main-view',
-    makeSelectable: 'div.option-indicator'
-}
-
 export const HOST_CONFIG_MAP : Record<string, ISiteConfig> = {
     'www.pinnacle.com': PINNACLE_CONFIG,
     'www.pinnacle.ca': PINNACLE_CONFIG,
@@ -82,5 +76,8 @@ export const HOST_CONFIG_MAP : Record<string, ISiteConfig> = {
     'www.bet365.de': BET365_CONFIG,
     'www.bet365.com.cy': BET365_CONFIG,
     'www.bet365.mx': BET365_CONFIG,
-    'sports.borgataonline.com': BORGATA_CONFIG
+    'sports.borgataonline.com': BETMGM_CONFIG,
+    'sports.partypoker.com': BETMGM_CONFIG,
+    'sports.bwin.com': BETMGM_CONFIG,
+    'sports.sportingbet.com': BETMGM_CONFIG
  }
