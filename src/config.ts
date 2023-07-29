@@ -52,6 +52,12 @@ export const LEOVEGAS_CONFIG: ISiteConfig = {
     makeSelectable: 'button'
 }
 
+export const POINTSBET_CONFIG: ISiteConfig = {
+    wait: 'div#mainContent >* button > span',
+    mutationObserver: 'div#container',
+    makeSelectable: 'button'
+}
+
 export const HOST_CONFIG_MAP : Record<string, ISiteConfig> = {
     'www.pinnacle.com': PINNACLE_CONFIG,
     'www.pinnacle.ca': PINNACLE_CONFIG,
@@ -120,5 +126,19 @@ export const HOST_CONFIG_MAP : Record<string, ISiteConfig> = {
     'oh.betparx.com': BETRIVERS_CONFIG,
     'www.playgunlake.com': BETRIVERS_CONFIG,
     'pa.betparx.com': BETRIVERS_CONFIG,
-    'www.leovegas.com': LEOVEGAS_CONFIG
+    'www.leovegas.com': LEOVEGAS_CONFIG,
+    'nj.pointsbet.com': POINTSBET_CONFIG,
+    'co.pointsbet.com': POINTSBET_CONFIG,
+    'il.pointsbet.com': POINTSBET_CONFIG,
+    'in.pointsbet.com': POINTSBET_CONFIG,
+    'ia.pointsbet.com': POINTSBET_CONFIG,
+    'ks.pointsbet.com': POINTSBET_CONFIG,
+    'la.pointsbet.com': POINTSBET_CONFIG,
+    'md.pointsbet.com': POINTSBET_CONFIG,
+    'mi.pointsbet.com': POINTSBET_CONFIG,
+    'ny.pointsbet.com': POINTSBET_CONFIG,
+    'oh.pointsbet.com': POINTSBET_CONFIG,
+    'pa.pointsbet.com': POINTSBET_CONFIG,
+    'wv.pointsbet.com': POINTSBET_CONFIG,
+    'va.pointsbet.com': POINTSBET_CONFIG,
  }

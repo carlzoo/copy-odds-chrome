@@ -18,9 +18,9 @@ Supported books:
 - betPARX
 - Play Gun Lake
 - LeoVegas
+- Pointsbet
 
 Support coming soon:
-- Pointsbet
 - Northstar Bets
 - Betano
 - Tipico
@@ -61,3 +61,5 @@ Deprioritized support (already has text selection):
 - Proline
 - Dafabet
 - Sbobet
+- Stake
+- gg.bet
