@@ -3,10 +3,10 @@
 An extension to copy odds values from sportsbook websites.
 
 Supported books:
-- Pinnacle: pinnacle.com, pinnacle.ca
+- Pinnacle
 - Draftkings
 - Caesars
-- BetMGM: all states
+- BetMGM
 - Bet365
 - Borgata
 - PartyPoker
@@ -15,6 +15,7 @@ Supported books:
 
 Support coming soon:
 - BetRivers
+- Sugarhouse
 - Pointsbet
 - Northstar Bets
 - betParx
@@ -24,6 +25,12 @@ Support coming soon:
 - Action247
 - Paddypower
 - William Hill
+- Predictit
+
+- Coral
+- Tonybet
+- Bookmaker
+- BetCris
 
 Deprioritized support (already has text selection):
 - Fanduel
@@ -43,3 +50,5 @@ Deprioritized support (already has text selection):
 - Mybookie
 - 888sport
 - Ladbrokes
+- Prophet Exchange
+- Betus

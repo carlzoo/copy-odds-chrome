@@ -34,6 +34,12 @@ export const BET365_CONFIG: ISiteConfig = {
     makeSelectable: 'div[role=button]'
 }
 
+export const BETRIVERS_CONFIG: ISiteConfig = {
+    wait: 'button.KambiBC-betty-outcome > div',
+    mutationObserver: 'section.main-content',
+    makeSelectable: 'button'
+}
+
 export const HOST_CONFIG_MAP : Record<string, ISiteConfig> = {
     'www.pinnacle.com': PINNACLE_CONFIG,
     'www.pinnacle.ca': PINNACLE_CONFIG,
@@ -76,8 +82,25 @@ export const HOST_CONFIG_MAP : Record<string, ISiteConfig> = {
     'www.bet365.de': BET365_CONFIG,
     'www.bet365.com.cy': BET365_CONFIG,
     'www.bet365.mx': BET365_CONFIG,
+    'www.bet365.dk': BET365_CONFIG,
     'sports.borgataonline.com': BETMGM_CONFIG,
     'sports.partypoker.com': BETMGM_CONFIG,
     'sports.bwin.com': BETMGM_CONFIG,
-    'sports.sportingbet.com': BETMGM_CONFIG
+    'sports.sportingbet.com': BETMGM_CONFIG,
+    'ny.betrivers.com': BETRIVERS_CONFIG,
+    'pa.betrivers.com': BETRIVERS_CONFIG,
+    'nj.betrivers.com': BETRIVERS_CONFIG,
+    'oh.betrivers.com': BETRIVERS_CONFIG,
+    'in.betrivers.com': BETRIVERS_CONFIG,
+    'il.betrivers.com': BETRIVERS_CONFIG,
+    'md.betrivers.com': BETRIVERS_CONFIG,
+    'mi.betrivers.com': BETRIVERS_CONFIG,
+    'ia.betrivers.com': BETRIVERS_CONFIG,
+    'co.betrivers.com': BETRIVERS_CONFIG,
+    'az.betrivers.com': BETRIVERS_CONFIG,
+    'la.betrivers.com': BETRIVERS_CONFIG,
+    'va.betrivers.com': BETRIVERS_CONFIG,
+    'wv.betrivers.com': BETRIVERS_CONFIG,
+    'on.betrivers.ca': BETRIVERS_CONFIG,
+    'ct.playsugarhouse.com': BETRIVERS_CONFIG,
  }
