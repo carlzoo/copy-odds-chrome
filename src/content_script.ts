@@ -33,12 +33,12 @@ const hostConfig = hostConfigDict[location.host];
 run(hostConfig);
 
 const targetNode = document.querySelector(hostConfig.mutationObserver);
-const config = { attributes: true, childList: true, subtree: true };
+const mutationObserverConfig = { attributes: true, childList: true, subtree: true };
 const observer = new MutationObserver((mutationList, _observer) => {
     if (mutationList.length > 0) {
         run(hostConfig);
     }
   });
 if (targetNode) {
-    observer.observe(targetNode, config);
+    observer.observe(targetNode, mutationObserverConfig);
 }
