@@ -10,4 +10,31 @@ Supported books:
 
 Support coming soon:
 - Bet365
+- Borgata
+- PartyPoker
+- BetRivers
 - Pointsbet
+- Northstar Bets
+- betParx
+- Betano
+- Unibet
+- Tipico
+- Action247
+
+Deprioritized support (already has text selection):
+- Fanduel
+- Wynnbet
+- BetOnline
+- Lowvig
+- Bovada
+- Bodog
+- Barstool
+- theScore Bet
+- Betly
+- Sports Interaction
+- Betway
+- Golden Nugget
+- Hard Rock Bet
+- Foxbet
+- Mybookie
+- 888sport
