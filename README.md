@@ -21,31 +21,28 @@ Supported books:
 - Pointsbet
 - Northstar Bets
 - Betano
+- Action247
+- Betsafe
 
 Support coming soon:
-
-- Action247
-- Predictit
-- Betsafe
+- Nordicbet
 - Paddypower
 - William Hill
 - Betfair
-- Nordicbet
 - Netbet
+- Matchbook
 - Neobet
 - Betclic
 - Cloudbet
-- Betfair Exchange
-- Matchbook
 - Suprabets
 - PS3838
-
-- Coral
-- Bookmaker
-- BetCris
-- Betsson
+- Betfair Exchange
+- Predictit
 - Vobet
 - Lasbet
+- Coral
+- Bookmaker
+
 
 Deprioritized support (already has text selection):
 - Fanduel
@@ -86,3 +83,5 @@ Deprioritized support (already has text selection):
 - Interwetten
 - Vulkanbet
 - Marsbet
+- BetCris
+- Betsson

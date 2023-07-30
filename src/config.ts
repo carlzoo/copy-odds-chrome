@@ -76,6 +76,13 @@ export const ACTION247_CONFIG: ISiteConfig = {
     makeSelectable: 'body'
 }
 
+export const BETSAFE_CONFIG: ISiteConfig = {
+    wait: 'div.obg-selection-content',
+    mutationObserver: '.obg-m-sportsbook-layout',
+    makeSelectable: '.obg-m-events-master-detail'
+}
+
+
 export const HOST_CONFIG_MAP : Record<string, ISiteConfig> = {
     'www.pinnacle.com': PINNACLE_CONFIG,
     'www.pinnacle.ca': PINNACLE_CONFIG,
@@ -161,5 +168,6 @@ export const HOST_CONFIG_MAP : Record<string, ISiteConfig> = {
     'va.pointsbet.com': POINTSBET_CONFIG,
     'www.northstarbets.ca': NORTHSTARBETS_CONFIG,
     'www.betano.ca': BETANO_CONFIG,
-    'sportsbook.action247.com': ACTION247_CONFIG
+    'sportsbook.action247.com': ACTION247_CONFIG,
+    'www.betsafe.com': BETSAFE_CONFIG
  }
