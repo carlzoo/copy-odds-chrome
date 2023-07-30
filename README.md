@@ -22,10 +22,9 @@ Supported books:
 - Northstar Bets
 - Betano
 - Action247
-- Betsafe
 
 Support coming soon:
-- Nordicbet
+
 - Paddypower
 - William Hill
 - Betfair
@@ -42,7 +41,6 @@ Support coming soon:
 - Lasbet
 - Coral
 - Bookmaker
-
 
 Deprioritized support (already has text selection):
 - Fanduel
@@ -85,3 +83,5 @@ Deprioritized support (already has text selection):
 - Marsbet
 - BetCris
 - Betsson
+- Nordicbet
+- Betsafe
