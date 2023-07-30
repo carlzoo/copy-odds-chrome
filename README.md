@@ -23,6 +23,7 @@ Supported books:
 - Betano
 - Action247
 - Paddypower
+- 32red
 
 Support coming soon:
 - William Hill
@@ -85,3 +86,4 @@ Deprioritized support (already has text selection):
 - Nordicbet
 - Betsafe
 - Betfair
+- Bet24

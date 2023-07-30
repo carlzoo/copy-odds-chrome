@@ -82,6 +82,12 @@ export const PADDYPOWER_CONFIG: ISiteConfig = {
     makeSelectable: 'abc-button .button'
 }
 
+export const THIRTYTWORED_CONFIG: ISiteConfig = {
+    wait: 'button.KambiBC-betty-outcome > div',
+    mutationObserver: 'div#sportsbook-frame',
+    makeSelectable: 'button'
+}
+
 export const HOST_CONFIG_MAP : Record<string, ISiteConfig> = {
     'www.pinnacle.com': PINNACLE_CONFIG,
     'www.pinnacle.ca': PINNACLE_CONFIG,
@@ -169,5 +175,6 @@ export const HOST_CONFIG_MAP : Record<string, ISiteConfig> = {
     'www.betano.ca': BETANO_CONFIG,
     'sportsbook.action247.com': ACTION247_CONFIG,
     'www.paddypower.com': PADDYPOWER_CONFIG,
-    'www.paddypower.ie': PADDYPOWER_CONFIG
+    'www.paddypower.ie': PADDYPOWER_CONFIG,
+    'www.32red.com': THIRTYTWORED_CONFIG
  }
