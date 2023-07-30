@@ -1,6 +1,6 @@
 # Copy Odds
 
-An extension to copy odds values from sportsbook websites.
+An extension to select and copy odds values text from various sportsbook websites.
 
 Supported books:
 - Pinnacle
@@ -22,12 +22,10 @@ Supported books:
 - Northstar Bets
 - Betano
 - Action247
+- Paddypower
 
 Support coming soon:
-
-- Paddypower
 - William Hill
-- Betfair
 - Netbet
 - Matchbook
 - Neobet
@@ -39,6 +37,7 @@ Support coming soon:
 - Predictit
 - Vobet
 - Lasbet
+
 - Coral
 - Bookmaker
 
@@ -85,3 +84,4 @@ Deprioritized support (already has text selection):
 - Betsson
 - Nordicbet
 - Betsafe
+- Betfair

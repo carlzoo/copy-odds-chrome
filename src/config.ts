@@ -76,6 +76,12 @@ export const ACTION247_CONFIG: ISiteConfig = {
     makeSelectable: 'body'
 }
 
+export const PADDYPOWER_CONFIG: ISiteConfig = {
+    wait: '.button__content > span',
+    mutationObserver: 'div#main-container',
+    makeSelectable: 'abc-button .button'
+}
+
 export const HOST_CONFIG_MAP : Record<string, ISiteConfig> = {
     'www.pinnacle.com': PINNACLE_CONFIG,
     'www.pinnacle.ca': PINNACLE_CONFIG,
@@ -161,5 +167,7 @@ export const HOST_CONFIG_MAP : Record<string, ISiteConfig> = {
     'va.pointsbet.com': POINTSBET_CONFIG,
     'www.northstarbets.ca': NORTHSTARBETS_CONFIG,
     'www.betano.ca': BETANO_CONFIG,
-    'sportsbook.action247.com': ACTION247_CONFIG
+    'sportsbook.action247.com': ACTION247_CONFIG,
+    'www.paddypower.com': PADDYPOWER_CONFIG,
+    'www.paddypower.ie': PADDYPOWER_CONFIG
  }
