@@ -94,6 +94,12 @@ export const WILLIAMHILL_CONFIG: ISiteConfig = {
     makeSelectable: 'button'
 }
 
+export const SUPERBOOK_CONFIG: ISiteConfig = {
+    wait: 'div.marketgroup >* div.value > div > div.selectionprice',
+    mutationObserver: 'main.v-content',
+    makeSelectable: '.selection-data'
+}
+
 export const HOST_CONFIG_MAP : Record<string, ISiteConfig> = {
     'www.pinnacle.com': PINNACLE_CONFIG,
     'www.pinnacle.ca': PINNACLE_CONFIG,
@@ -192,5 +198,12 @@ export const HOST_CONFIG_MAP : Record<string, ISiteConfig> = {
     'www.paddypower.com': PADDYPOWER_CONFIG,
     'www.paddypower.ie': PADDYPOWER_CONFIG,
     'www.32red.com': THIRTYTWORED_CONFIG,
-    'sports.williamhill.com': WILLIAMHILL_CONFIG
+    'sports.williamhill.com': WILLIAMHILL_CONFIG,
+    'az.superbook.com': SUPERBOOK_CONFIG,
+    'co.superbook.com': SUPERBOOK_CONFIG,
+    'iowa.superbook.com': SUPERBOOK_CONFIG,
+    'md.superbook.com': SUPERBOOK_CONFIG,
+    'nj.superbook.com': SUPERBOOK_CONFIG,
+    'oh.superbook.com': SUPERBOOK_CONFIG,
+    'tn.superbook.com': SUPERBOOK_CONFIG
  }

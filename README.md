@@ -25,6 +25,7 @@ An extension to select and copy odds values text from various sportsbook website
 - Paddypower
 - 32red
 - William Hill
+- Superbook
 
 ## Support coming soon
 - Netbet
