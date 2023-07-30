@@ -13,16 +13,9 @@ const waitForLoaded = (selector: string, callback: () => void) => {
 
 const run = (config: ISiteConfig) => {
     
-    const makeOddsTextSelectable = (): void => {
-    
-        const buttons = document.querySelectorAll<HTMLElement>(config.makeSelectable);
-        buttons?.forEach((button) => {
-            button.style.userSelect = "text";
-        });
-    }
-    
-    waitForLoaded(config.wait, () => {
-        makeOddsTextSelectable();
+    const selectors = document.querySelectorAll<HTMLElement>(config.makeSelectable);
+    selectors?.forEach((selector) => {
+        selector.style.userSelect = "text";
     });
 }
 

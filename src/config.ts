@@ -7,31 +7,31 @@ export interface ISiteConfig {
 export const PINNACLE_CONFIG: ISiteConfig = {
     wait: 'div[class*="style_buttons"] >* button > span',
     mutationObserver: 'div#root',
-    makeSelectable: 'button'
+    makeSelectable: '[class*="style_button__"]'
 }
 
 export const DRAFTKINGS_CONFIG: ISiteConfig = {
     wait: 'div.sportsbook-outcome-cell__elements',
     mutationObserver: 'section.sportsbook-wrapper__body',
-    makeSelectable: 'div[role="button"]'
+    makeSelectable: 'div.sportsbook-outcome-cell__body'
 }
 
 export const BETMGM_CONFIG: ISiteConfig = {
     wait: 'div#main-view >* div.option-indicator',
     mutationObserver: 'div#main-view',
-    makeSelectable: 'div.option-indicator'
+    makeSelectable: 'html'
 }
 
 export const CAESARS_CONFIG: ISiteConfig = {
     wait: 'div.selectionContainer >* button > div > span',
     mutationObserver: 'div.contentContainer',
-    makeSelectable: 'button'
+    makeSelectable: '.cui-select-none'
 }
 
 export const BET365_CONFIG: ISiteConfig = {
     wait: 'div.gl-Participant_General > span',
     mutationObserver: 'div.wc-PageView',
-    makeSelectable: 'div[role=button]'
+    makeSelectable: '.g5-Application'
 }
 
 export const BETRIVERS_CONFIG: ISiteConfig = {
@@ -67,7 +67,13 @@ export const NORTHSTARBETS_CONFIG: ISiteConfig = {
 export const BETANO_CONFIG: ISiteConfig = {
     wait: 'div.selections > button > span',
     mutationObserver: 'section.main-content-wrapper',
-    makeSelectable: 'button'
+    makeSelectable: '.selections__selection'
+}
+
+export const ACTION247_CONFIG: ISiteConfig = {
+    wait: 'div[class*="priceBlockContainer"]',
+    mutationObserver: 'section#body-content',
+    makeSelectable: 'body'
 }
 
 export const HOST_CONFIG_MAP : Record<string, ISiteConfig> = {
@@ -154,5 +160,6 @@ export const HOST_CONFIG_MAP : Record<string, ISiteConfig> = {
     'wv.pointsbet.com': POINTSBET_CONFIG,
     'va.pointsbet.com': POINTSBET_CONFIG,
     'www.northstarbets.ca': NORTHSTARBETS_CONFIG,
-    'www.betano.ca': BETANO_CONFIG
+    'www.betano.ca': BETANO_CONFIG,
+    'sportsbook.action247.com': ACTION247_CONFIG
  }
