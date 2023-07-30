@@ -88,6 +88,12 @@ export const THIRTYTWORED_CONFIG: ISiteConfig = {
     makeSelectable: 'button'
 }
 
+export const WILLIAMHILL_CONFIG: ISiteConfig = {
+    wait: 'div.btmarket__selection > button > span',
+    mutationObserver: 'main#main',
+    makeSelectable: 'button'
+}
+
 export const HOST_CONFIG_MAP : Record<string, ISiteConfig> = {
     'www.pinnacle.com': PINNACLE_CONFIG,
     'www.pinnacle.ca': PINNACLE_CONFIG,
@@ -173,8 +179,18 @@ export const HOST_CONFIG_MAP : Record<string, ISiteConfig> = {
     'va.pointsbet.com': POINTSBET_CONFIG,
     'www.northstarbets.ca': NORTHSTARBETS_CONFIG,
     'www.betano.ca': BETANO_CONFIG,
+    'www.betano.com': BETANO_CONFIG,
+    'www.betano.bg': BETANO_CONFIG,
+    'www.betano.pt': BETANO_CONFIG,
+    'ro.betano.com': BETANO_CONFIG,
+    'www.betano.de': BETANO_CONFIG,
+    'www.betano.cz': BETANO_CONFIG,
+    'pe.betano.com': BETANO_CONFIG,
+    'cl.betano.com': BETANO_CONFIG,
+    'pl.betano.com': BETANO_CONFIG,
     'sportsbook.action247.com': ACTION247_CONFIG,
     'www.paddypower.com': PADDYPOWER_CONFIG,
     'www.paddypower.ie': PADDYPOWER_CONFIG,
-    'www.32red.com': THIRTYTWORED_CONFIG
+    'www.32red.com': THIRTYTWORED_CONFIG,
+    'sports.williamhill.com': WILLIAMHILL_CONFIG
  }

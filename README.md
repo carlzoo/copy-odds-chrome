@@ -2,7 +2,7 @@
 
 An extension to select and copy odds values text from various sportsbook websites.
 
-Supported books:
+## Supported books
 - Pinnacle
 - Draftkings
 - Caesars
@@ -24,10 +24,12 @@ Supported books:
 - Action247
 - Paddypower
 - 32red
-
-Support coming soon:
 - William Hill
+
+## Support coming soon
 - Netbet
+- LiveScore Bet
+- Favbet
 - Matchbook
 - Neobet
 - Betclic
@@ -38,11 +40,13 @@ Support coming soon:
 - Predictit
 - Vobet
 - Lasbet
+- Hollywood Bets
 
 - Coral
 - Bookmaker
+- Pixbet
 
-Deprioritized support (already has text selection):
+## Deprioritized support (already has text selection)
 - Fanduel
 - Wynnbet
 - BetOnline
@@ -87,3 +91,10 @@ Deprioritized support (already has text selection):
 - Betsafe
 - Betfair
 - Bet24
+- Parimatch
+- BetKing
+- Sportybet
+- Bet9ja
+- Betnacional
+- Fun88
+- Melbet
