@@ -1,6 +1,16 @@
 # Copy Odds
 
-An extension to select and copy odds values text from various sportsbook websites.
+A chrome extension to select and copy odds values text from various sportsbook websites.
+
+# Installation
+
+This extension was indefinitely rejected by the chrome store due to policy against facilitating gambling. It needs to be installed manually via developer mode.
+
+1. Find the latest version in releases directory
+2. Visit chrome://extensions
+3. Enable developer mode in the top right hand corner
+4. Click Load unpacked
+5. Select the directory from step 1
 
 ## Supported books
 - Pinnacle
