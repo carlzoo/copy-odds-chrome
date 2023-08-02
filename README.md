@@ -2,6 +2,9 @@
 
 A chrome extension to select and copy odds values text from various sportsbook websites.
 
+![Pinnacle](https://raw.githubusercontent.com/carlzoo/copy-odds-chrome/main/releases/screenshots/pinnacle-screenshot.png)
+![Draftkings](https://raw.githubusercontent.com/carlzoo/copy-odds-chrome/main/releases/screenshots/dk-screenshot.png)
+
 # Installation
 
 This extension was indefinitely rejected by the chrome store due to policy against facilitating gambling. It needs to be installed manually via developer mode.
